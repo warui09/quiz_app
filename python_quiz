@@ -1,0 +1,115 @@
+// add 10 quizzes to the collection named python
+use quiz;
+
+db.python.insertMany([
+  {
+    "question_id": 1,
+    "question": "Which is the correct operator for power(xy)?",
+    "choices": [
+      {"A": "x^y"},
+      {"B": "x**y"},
+      {"C": "x^^y"},
+      {"D": "None of the above"}
+    ],
+    "answer": "B"
+  },
+  {
+    "question_id": 2,
+    "question": "Would the output of 20//5 and the output of 20%5 be the same?",
+    "choices": [
+      {"A": "Yes, they both will give the remainder"},
+      {"B": "No, the first line will give the remainder and the other will give the quotient"},
+      {"C": "Yes, they both will give the quotient"},
+      {"D": "No, the first line will give the quotient and the other will give the remainder"}
+    ],
+    "answer": "D"
+  },
+  {
+    "question_id": 3,
+    "question": "Which of these is not a core data type?",
+    "choices": [
+      {"A": "Lists"},
+      {"B": "Dictionary"},
+      {"C": "Tuples"},
+      {"D": "Class"}
+    ],
+    "answer": "D"
+  },
+  {
+    "question_id": 4,
+    "question": "Which of the following is the correct statement?\nz = {\"x\":0, \"y\":1}",
+    "choices": [
+      {"A": "Dictionary z is created"},
+      {"B": "x and y are the keys of dictionary z"},
+      {"C": "0 and 1 are the values of dictionary z"},
+      {"D": "All of the above"}
+    ],
+    "answer": "D"
+  },
+  {
+    "question_id": 5,
+    "question": "Which of these is the correct code for creating a list of names?",
+    "choices": [
+      {"A": "nameList = John, Harry, Mac, Donald, Colonel, Tony"},
+      {"B": "nameList = (\"John\", \"Harry\", \"Mac\", \"Donald\", \"Colonel\", \"Tony\")"},
+      {"C": "nameList = [\"John\", \"Harry\", \"Mac\", \"Donald\", \"Colonel\", \"Tony\"]"},
+      {"D": "nameList = [John, Harry, Mac, Donald, Colonel, Tony]"}
+    ],
+    "answer": "C"
+  },
+  {
+    "question_id": 6,
+    "question": "Write the output of the following code:\nx=2\nx=5\nx=x+x\nprint(x)",
+    "choices": [
+      {"A": "7"},
+      {"B": "10"},
+      {"C": "4"},
+      {"D": "Error"}
+    ],
+    "answer": "B"
+  },
+  {
+    "question_id": 7,
+    "question": "What will be the output of this string operation s[2:5], if s=\"hello world\" -",
+    "choices": [
+      {"A": "lo"},
+      {"B": "llo"},
+      {"C": "llow"},
+      {"D": "ell"}
+    ],
+    "answer": "B"
+  },
+  {
+    "question_id": 8,
+    "question": "Which of these collections defines a TUPLE?",
+    "choices": [
+      {"A": "{\"apple\", \"banana\", \"cherry\"}"},
+      {"B": "[\"apple\", \"banana\", \"cherry\"]"},
+      {"C": "{\"name\": \"apple\", \"color\": \"green\"}"},
+      {"D": "(\"apple\", \"banana\", \"cherry\")"}
+    ],
+    "answer": "D"
+  },
+  {
+    "question_id": 9,
+    "question": "Which of these collections defines a SET?",
+    "choices": [
+      {"A": "(\"apple\", \"banana\", \"cherry\")"},
+      {"B": "{\"name\": \"apple\", \"color\": \"green\"}"},
+      {"C": "[\"apple\", \"banana\", \"cherry\"]"},
+      {"D": "{\"apple\", \"banana\", \"cherry\"}"}
+    ],
+    "answer": "D"
+  },
+  {
+    "question_id": 10,
+    "question": "What is the output of the following program:\ny = 8\nz = lambda x : x * y\nprint z(6)",
+    "choices": [
+      {"A": "48"},
+      {"B": "22"},
+      {"C": "8"},
+      {"D": "24"}
+    ],
+    "answer": "A"
+  }
+]);
