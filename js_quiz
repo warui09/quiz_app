@@ -1,0 +1,121 @@
+// add js quiz
+use quiz;
+
+db.js.insertMany([
+  {
+    "question_id": 1,
+    "question": "What is the value of “a” in the following statement?\n\nvar a;",
+    "choices": [
+      {"A": "undefined"},
+      {"B": "null"},
+      {"C": "0"},
+      {"D": "NaN"}
+    ],
+    "answer": "A"
+  },
+  {
+    "question_id": 2,
+    "question": "JavaScript is a simpler form of Java built for the web.",
+    "choices": [
+      {"A": "True"},
+      {"B": "False"}
+    ],
+    "answer": "B"
+  },
+  {
+    "question_id": 3,
+    "question": "Which of the following correctly loops through the Array?\n\nconst fruits = ['Apple', 'Mango', 'Cherry'];",
+    "choices": [
+      {"A": "for (const fruit in fruits) {\n\nconsole.log(fruit);\n\n}"},
+      {"B": "fruits.forEach(function(fruit, index, array) {\n\nconsole.log(fruit);\n\n});"}
+    ],
+    "answer": "B"
+  },
+  {
+    "question_id": 4,
+    "question": "What is the output of the following code?\n\nconst letters = ['A', 'B', 'A', 'C', 'B'];\n\nconsole.log([...new Set(letters)]);",
+    "choices": [
+      {"A": "['A', 'B', 'C']"},
+      {"B": "[['A', 'A'], ['B', 'B'], ['C']]"},
+      {"C": "[['A', 'A'], ['B', 'B'], 'C']"}
+    ],
+    "answer": "A"
+  },
+  {
+    "question_id": 5,
+    "question": "What is the output of this code?\n\nconsole.log(typeof null);",
+    "choices": [
+      {"A": "\"null\""},
+      {"B": "\"object\""},
+      {"C": "\"undefined\""},
+      {"D": "\"number\""}
+    ],
+    "answer": "B"
+  },
+  {
+    "question_id": 6,
+    "question": "What will this code return?\n\nconsole.log(0.1 + 0.2 === 0.3);",
+    "choices": [
+      {"A": "true"},
+      {"B": "false"},
+      {"C": "TypeError"},
+      {"D": "NaN"}
+    ],
+    "answer": "B"
+  },
+  {
+    "question_id": 7,
+    "question": "What is the purpose of the Array.prototype.map() method in JavaScript?",
+    "choices": [
+      {"A": "To iterate over each item in an array and modify the array in place."},
+      {"B": "To check whether at least one element in the array passes the test implemented by the provided function."},
+      {"C": "To create a new array with the results of calling a provided function on every element in the calling array."},
+      {"D": "To execute a reducer function on each element of the array, resulting in a single output value."}
+    ],
+    "answer": "C"
+  },
+  {
+    "question_id": 8,
+    "question": "Which method converts JSON data to a JavaScript object?",
+    "choices": [
+      {"A": "JSON.toString()"},
+      {"B": "JSON.toObject()"},
+      {"C": "JSON.parse()"},
+      {"D": "JSON.stringify()"}
+    ],
+    "answer": "C"
+  },
+  {
+    "question_id": 9,
+    "question": "Which event occurs when the user clicks on an HTML element?",
+    "choices": [
+      {"A": "onchange"},
+      {"B": "onclick"},
+      {"C": "onmouseover"},
+      {"D": "onmouseclick"}
+    ],
+    "answer": "B"
+  },
+  {
+    "question_id": 10,
+    "question": "What does the this keyword refer to in a JavaScript method?",
+    "choices": [
+      {"A": "The global object"},
+      {"B": "The object that owns the method"},
+      {"C": "The document object"},
+      {"D": "The window object"}
+    ],
+    "answer": "B"
+  },
+  {
+    "question_id": 11,
+    "question": "What is a typical use case for an anonymous function in JavaScript?",
+    "choices": [
+      {"A": "Callbacks"},
+      {"B": "Defining classes"},
+      {"C": "Variable assignments"},
+      {"D": "All of the above"}
+    ],
+    "answer": "A"
+  }
+]);
