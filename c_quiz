@@ -1,0 +1,125 @@
+// create collection quiz and add the quizzes
+
+use quiz
+
+db.c.insertOne({
+  "question_id": 1,
+  "question": "What does this code print",
+  "code": "int a = 20;\n*ptr = &a;\n**dptr = &ptr;\nprintf(\"%d\", **dptr);",
+  "choices": [
+    {"A": "address of a"},
+    {"B": "address of ptr"},
+    {"C": "value of a"},
+    {"D": "address of dptr"}
+  ],
+  "answer": "C"
+});
+
+db.c.insertOne({
+  "question_id": 2,
+  "question": "What does this command do?",
+  "code": "int* a = NULL;",
+  "choices": [
+    {"A": "Creates a pointer of type integer that is initially pointing to null."},
+    {"B": "Creates a pointer of type integer that is initially pointing to 0."},
+    {"C": "Creates a pointer in the heap."},
+    {"D": "None of the answers are valid."}
+  ],
+  "answer": "A"
+});
+
+db.c.insertOne({
+  "question_id": 3,
+  "question": "If ptr is a pointer variable pointing to an array, what does this statement print?",
+  "code": "printf(\"%d\",*(ptr++)) ;",
+  "choices": [
+    {"A": "Next location address"},
+    {"B": "Next location index value"},
+    {"C": "Compile time error"},
+    {"D": "Next location value"}
+  ],
+  "answer": "D"
+});
+
+db.c.insertOne({
+  "question_id": 4,
+  "question": "What will be the output?",
+  "code": "int i=10;\n\nint *p;\n\np=&i;\n\ni+=5;\n\nprintf(\"\\n i=%d *p=%d\", i,*p);",
+  "choices": [
+    {"A": "i=10, *p=10"},
+    {"B": "i=10, *p=15"},
+    {"C": "i=15, *p=15"},
+    {"D": "i=15, *p=10"}
+  ],
+  "answer": "C"
+});
+
+db.c.insertOne({
+  "question_id": 5,
+  "question": "Which one of the following is a loop construct that will always be executed once?",
+  "choices": [
+    {"A": "for"},
+    {"B": "while"},
+    {"C": "switch"},
+    {"D": "do while"}
+  ],
+  "answer": "D"
+});
+
+db.c.insertOne({
+  "question_id": 6,
+  "question": "Find the error/output in the following code:\n\nint main()\n{\n    static int num = 8;\n    printf(\" %d\", num = num - 2);\n    if (num != 0)\n        main();\n}",
+  "choices": [
+    {"A": "8 6 4 2"},
+    {"B": "Infinite output"},
+    {"C": "Invalid because main function can't call itself"},
+    {"D": "6 4 2 0"}
+  ],
+  "answer": "D"
+});
+
+db.c.insertOne({
+  "question_id": 7,
+  "question": "Find the error/output in the following code:\n\nvoid main()\n{\n    printf(\" %d \", printf(\"computer science\"));\n}",
+  "choices": [
+    {"A": "Computer science16"},
+    {"B": "16computer science"},
+    {"C": "Computer science"},
+    {"D": "Computer science18"}
+  ],
+  "answer": "A"
+});
+
+db.c.insertOne({
+  "question_id": 8,
+  "question": "Are the expressions *ptr++ and ++*ptr the same?",
+  "choices": [
+    {"A": "True"},
+    {"B": "False"}
+  ],
+  "answer": "B"
+});
+
+db.c.insertOne({
+  "question_id": 9,
+  "question": "Choose the correct C statement.",
+  "choices": [
+    {"A": "Loops or Repetition block executes a group of statements repeatedly."},
+    {"B": "Loop is usually executed as long as a condition is met."},
+    {"C": "Loops usually take advantage of Loop Counter."},
+    {"D": "All the above."}
+  ],
+  "answer": "D"
+});
+
+db.c.insertOne({
+  "question_id": 10,
+  "question": "In C, if you pass an array as an argument to a function, what actually gets passed?",
+  "choices": [
+    {"A": "Value of elements in array"},
+    {"B": "First element of the array"},
+    {"C": "Base address of the array"},
+    {"D": "Address of the last element of array"}
+  ],
+  "answer": "C"
+});
